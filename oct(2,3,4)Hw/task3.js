@@ -12,11 +12,21 @@ console.log(img);
 
 let like = document.createElement("button");
 like.innerText="like";
+like.style.backgroundColor = "red";
+// like.setAttribute("onclick","lc");
 console.log(like);
 
 
 img.onmouseover = ()=>{
-    div.appendChild(like);
+    img.appendChild(like);
+}
+img.onmouseout = () =>{
+    like.remove();
+}
+
+
+like.onclick = ()=>{
+    
 }
 
 document.body.appendChild(div);
