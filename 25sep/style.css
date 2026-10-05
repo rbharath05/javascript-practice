@@ -1,0 +1,14 @@
+.one{
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+}
+#first{
+    background-color: red;
+}
+#second{
+    background-color: green;
+}
+#third{
+    background-color: violet;
+}
