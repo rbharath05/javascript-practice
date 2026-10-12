@@ -60,3 +60,26 @@
 // }
 // console.log(dup);
 
+let students = [
+    { name: "Bharath", marks: 85 },
+    { name: "Rahul", marks: 32 },
+    { name: "Anil", marks: 72 },
+    { name: "Kiran", marks: 45 },
+    { name: "Ravi", marks: 28 }
+];
+// console.log(students[1].marks);
+let largest = 0;
+for(let i=0; i<students.length; i++){
+    if(students[i].marks > largest){
+        largest = students[i].marks;
+    }
+}
+for(let i=0; i<students.length; i++){
+    if(students[i].marks==largest){
+        console.log(students[i].name);
+    }
+}
+console.log(largest);   
+if(largest>40){
+    console.log("pass");
+}
