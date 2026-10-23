@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="game-container">
+        <header class="game-header">
+            <h1>Memory <span>Match</span></h1>
+            <p>FLIP & FIND MATCHING PAIRS</p>
+        </header>
+    </main>
+
+    
+    <section class="stats-panel">
+        <div class="stat">
+            <h3>MOVES</h3>
+            <p id="moves">0</p>
+        </div>
+
+        <div class="stat">
+            <h3>PAIRS</h3>
+            <p id="pairs">0</p>
+        </div>
+
+        <div class="stat">
+            <h3>TIME</h3>
+            <p><span id="time">0</span>s</p>
+        </div>
+    </section>
+
+        
+<div class="game-board" id="gameBoard">
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+    <div class="card">?</div>
+</div>
+
+    
+    <section class="game-controls">
+        <select id="difficulty" aria-label="Choose difficulty">
+            <option value="easy">Easy (4*4)</option>
+            <option value="medium">Medium (4*5)</option>
+            <option value="hard">Hard (6*6)</option>
+        </select>
+
+        <button id="restart" type="button">↻ Restart</button>
+    </section>
+
+
+
+
+    <script src="game.js"></script>
+</body>
+</html>
